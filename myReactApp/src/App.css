@@ -31,6 +31,10 @@
   background-color: #140524;
 }
 
+header p{
+  margin-bottom: 1rem;
+}
+
 #core-concepts{
   padding: 2rem;
   border-radius: 6px;
