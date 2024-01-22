@@ -1,82 +1,92 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#root {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  color: #fff;
-  background-color: #140524;
+html {
+  line-height: 1.5;
+  color: #ebe7ef;
+  background: radial-gradient(#280a48, #20043d);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  min-height: 80rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+main {
+  width: 90%;
+  font-size: 1.25rem;
+  margin: auto;
 }
 
-.App {
-  text-align: center;
-  color: #fff;
-  background-color: #140524;
-}
-
-header p{
-  margin-bottom: 1rem;
-}
-
-#core-concepts{
+#core-concepts {
   padding: 2rem;
   border-radius: 6px;
   border-color: #140524;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  background-color: #3c007c;
 }
 
-#core-concepts ul{
+main h2 {
+  text-align: center;
+  margin: 0 0 0.15rem 0;
+  color: #a18aba;
+}
+
+#core-concepts ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   color: #fff;
-  gap: 20px;
+  gap: 2rem;
   border-radius: 6px;
   padding: 2rem;
 }
 
-#core-concepts ul li{
-  max-width: 300px;
+#core-concepts ul li {
+  max-width: 20rem;
+  padding: 2rem;
   border: 1px solid #fff;
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#core-concepts li img {
+  height: 6rem;
+  width: 6rem;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#core-concepts li h3 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
 }
 
-.card {
-  padding: 2em;
+#core-concepts li p {
+  margin: 0.9rem 0;
 }
 
-.read-the-docs {
-  color: #888;
+#examples{
+  margin: 3rem auto;
+}
+
+#examples h2{
+  text-align: left;
+}
+
+#examples menu{
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+#examples menu button{
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  background: #8819ff;
+  border: none;
+  cursor: pointer;
 }
