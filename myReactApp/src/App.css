@@ -7,7 +7,7 @@
 html {
   line-height: 1.5;
   color: #ebe7ef;
-  background: radial-gradient(#280a48, #20043d);
+  background: radial-gradient(#5200aa, #3f1270);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   min-height: 80rem;
@@ -23,13 +23,14 @@ main {
   padding: 2rem;
   border-radius: 6px;
   border-color: #140524;
+  background: #381261;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 main h2 {
   text-align: center;
   margin: 0 0 0.15rem 0;
-  color: #a18aba;
+  color: #fff;  
 }
 
 #core-concepts ul {
@@ -88,5 +89,17 @@ main h2 {
   color: #fff;
   background: #8819ff;
   border: none;
+  outline: none;
   cursor: pointer;
+}
+
+#examples menu button:hover{
+  background: #5200aa;
+}
+
+#tab-content{
+  background: #381261;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
 }
