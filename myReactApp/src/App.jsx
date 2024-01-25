@@ -7,10 +7,10 @@ import TabButton from "./components/TabButton.jsx";
 import { useState } from "react";
 
 function App() {
-  const [ myBtn, setMyBtn ] = useState("components")
+  const [selectBtn, setSelectBtn] = useState();
 
   function handleSelect(selectedBtn) {
-    setMyBtn(selectedBtn)
+    setSelectBtn(selectedBtn);
   }
 
   return (
@@ -23,29 +23,31 @@ function App() {
             <CoreConcepts {...CORE_CONCEPTS[0]} />
             <CoreConcepts {...CORE_CONCEPTS[1]} />
             <CoreConcepts {...CORE_CONCEPTS[2]} />
-            <CoreConcepts {...CORE_CONCEPTS[3]} /> 
+            <CoreConcepts {...CORE_CONCEPTS[3]} />
           </ul>
         </section>
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={() => handleSelect("components")}>
+            <TabButton isSelected={selectBtn === "components"} onSelect={() => handleSelect("components")}>
               Components
             </TabButton>
-            <TabButton onSelect={() => handleSelect("jsx")}>JSX</TabButton>
-            <TabButton onSelect={() => handleSelect("props")}>Props</TabButton>
-            <TabButton onSelect={() => handleSelect("state")}>State</TabButton>
+            <TabButton isSelected={selectBtn === "jsx"} onSelect={() => handleSelect("jsx")}>JSX</TabButton>
+            <TabButton isSelected={selectBtn === "props"} onSelect={() => handleSelect("props")}>Props</TabButton>
+            <TabButton isSelected={selectBtn === "state"} onSelect={() => handleSelect("state")}>State</TabButton>
           </menu>
 
-          <div id="tab-content">
-            <h3>{EXAMPLES[myBtn].title}</h3>
-            <p>{EXAMPLES[myBtn].description}</p>
-            <pre>
-              <code>
-                {EXAMPLES[myBtn].code}
-              </code>
-            </pre>
-          </div>
+          {!selectBtn ? (
+            <p>Please select a topic.</p>
+          ) : (
+            <div id="tab-content">
+              <h3>{EXAMPLES[selectBtn].title}</h3>
+              <p>{EXAMPLES[selectBtn].description}</p>
+              <pre>
+                <code>{EXAMPLES[selectBtn].code}</code>
+              </pre>
+            </div>
+          )}
         </section>
       </main>
     </div>
