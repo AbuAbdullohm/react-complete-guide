@@ -3,21 +3,21 @@
   margin: 3rem 0;
 }
 
-/* header img{
-    height: 5rem;
-    width: 10rem;
-    object-fit: cover;
-} */
+header img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+}
 
 .header h1 {
   margin: 0;
-  font-size: 5rem;
+  font-size: 3rem;
   background-color: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
 }
 
 .header p {
-    margin: 0;
-    font-size: 1.25rem;
-    color: #fff;
+  margin: 0;
+  font-size: 1.25rem;
+  color: #fff;
 }

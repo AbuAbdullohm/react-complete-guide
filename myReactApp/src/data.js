@@ -30,7 +30,8 @@ export const CORE_CONCEPTS = [
 export const EXAMPLES = {
   components: {
     title: "Components",
-    description: "Components are the building block of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.",
+    description:
+      "Components are the building block of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.",
     code: `
     function Welcome(){
       return <h1>Hello, world!</h1>;
@@ -54,7 +55,7 @@ export const EXAMPLES = {
     code: `
     function Welcome(props){
       return <h1>Hello, {props.name}</h1>;
-    `,
+    }`,
   },
   state: {
     title: "State",
@@ -62,17 +63,18 @@ export const EXAMPLES = {
       "State allows React components to changetheir output over time in response to user action, network responses, and anything else.",
     code: `
     function Counter(){
-      const [isVisible, setIsVisible] = useState(false)'
+      const [isVisible, setIsVisible] = useState(false);
 
       function handleClick(){
-        setIsVisible(true)'
+        setIsVisible(true);
       }
 
       return (
         <div>
-          
+          <button onClick={handleClick}>Show Details</button>
+          {isVisible && <p>Amazing details</p>}
         </div>
-      )
-    `,
+      );
+    }`,
   },
 };

@@ -7,7 +7,7 @@
 html {
   line-height: 1.5;
   color: #ebe7ef;
-  background: radial-gradient(#5200aa, #3f1270);
+  background: radial-gradient(#773db4, #7b00ff);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   min-height: 80rem;
@@ -23,7 +23,7 @@ main {
   padding: 2rem;
   border-radius: 6px;
   border-color: #140524;
-  background: #381261;
+  background: #5a00b9;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -87,7 +87,7 @@ main h2 {
   padding: 0.7rem 1rem;
   border-radius: 5px;
   color: #fff;
-  background: #381261;
+  background: #9d42ff;
   border: none;
   outline: none;
   cursor: pointer;
@@ -96,15 +96,19 @@ main h2 {
 }
 
 #examples menu button.active{
-  background: #8819ff;
+  background: #5a00b9;
+}
+
+#examples menu button.active:hover{
+  background: #5a00b9;
 }
 
 #examples menu button:hover{
-  background: #5d1ca1;
+  background: #5a00b9;
 }
 
 #tab-content{
-  background: #381261;
+  background: #5a00b9;
   padding: 30px;
   border-radius: 25px;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 5px 15px;
